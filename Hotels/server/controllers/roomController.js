@@ -12,13 +12,13 @@ class RoomController{
         }
     }
 
-    async getOne(req, res){
-        
-    }
-
     async getAll(req, res){
         const rooms = await Room.findAll()
         return res.json(rooms)
+    }
+
+    async getOne(req, res){
+        
     }
 }
 

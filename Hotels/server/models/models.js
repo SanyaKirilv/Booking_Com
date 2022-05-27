@@ -37,7 +37,7 @@ const TypeInfo = sequelize.define('type_info',{
 
 const Hotel = sequelize.define('hotel',{
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
-    name: {type: DataTypes.STRING, unique: true, allowNull: false},
+    name: {type: DataTypes.STRING, allowNull: false},
     location: {type: DataTypes.STRING, allowNull: false} 
 })
 
